@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIMSET — Basketball Culture</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+
+    nav {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 8%;
+      background:
+        radial-gradient(circle at 80% 30%, #4a1d00 0%, transparent 35%),
+        linear-gradient(135deg, #111 0%, #050505 100%);
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .tag {
+      color: #f28c28;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(60px, 10vw, 130px);
+      line-height: 0.85;
+      font-weight: 900;
+      letter-spacing: -6px;
+    }
+
+    .hero p {
+      margin-top: 30px;
+      color: #bbb;
+      font-size: 18px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      background: white;
+      color: black;
+      padding: 16px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #f28c28;
+      color: white;
+    }
+
+    section {
+      padding: 90px 7%;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 40px;
+      font-weight: 900;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product {
+      background: #151515;
+      padding: 20px;
+    }
+
+    .product-image {
+      height: 400px;
+      background: linear-gradient(135deg, #222, #0c0c0c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 900;
+      color: #333;
+    }
+
+    .product h3 {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .price {
+      color: #aaa;
+      margin-top: 8px;
+    }
+
+    .story {
+      background: #f1e5d0;
+      color: #111;
+    }
+
+    .story p {
+      max-width: 750px;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 50px 7%;
+      border-top: 1px solid #222;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 800px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+
+      .product-image {
+        height: 350px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">RIMSET</div>
+
+    <div>
+      <a href="#shop">SHOP</a>
+      <a href="#story">ABOUT</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="tag">BASKETBALL • STREETWEAR • CULTURE</div>
+
+      <h1>RIMSET</h1>
+
+      <p>
+        Built around basketball. Designed for the culture.
+        Premium streetwear made for those who live the game.
+      </p>
+
+      <a class="button" href="#shop">SHOP THE DROP</a>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2 class="section-title">THE DROP</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-image">TEE</div>
+        <h3>RIMSET OVERSIZED TEE</h3>
+        <div class="price">$— AUD</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">HOODIE</div>
+        <h3>RIMSET HEAVYWEIGHT HOODIE</h3>
+        <div class="price">$— AUD</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">SHORTS</div>
+        <h3>RIMSET BASKETBALL SHORTS</h3>
+        <div class="price">$— AUD</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <h2 class="section-title">MORE THAN CLOTHING.</h2>
+
+    <p>
+      RIMSET is built around the game, the people and the culture
+      surrounding basketball. We're creating premium streetwear
+      for the next generation of hoopers.
+    </p>
+  </section>
+
+  <footer>
+    <div>© 2026 RIMSET</div>
+    <div>BUILT FOR THE GAME.</div>
+  </footer>
+
+</body>
+</html>
